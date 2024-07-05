@@ -37,9 +37,6 @@ input {
 	vertical-align: middle;
 }
 
-strong.more {
-	color: #c30
-}
 
 a {
 	text-decoration: none;
@@ -62,7 +59,6 @@ body {
 body {
 	position: relative;
 	height: 100%;
-	background: #FFEFD5;
 }
 
 /*ヘッダー*/
@@ -108,12 +104,11 @@ body {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
 	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #FFEFD5;
+	/* background-color: #FFEFD5; */
 }
 
 .swiper-slide img {
@@ -135,37 +130,17 @@ main {
 	font-size: 30px;
 }
 
-.accordion {
-	margin: 0 auto;
+.services ul {
+	display: none;
 }
 
-.accordion-button {
-	background-color: #FFAD90;
+.services h2 {
+	background: #FFC7AF;
+	gap: 0px;
 }
 
 .accordion-button::after {
 	display: none;
-}
-
-.accordion-body {
-	background-color: #FFEFD5;
-	font-size: 14px;
-	line-height: 30px
-}
-
-.accordion:focus {
-	box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-	color: inherit;
-	background-color: #FFAD90;
-
-}
-
-
-*, ::after, ::before {
-	box-sizing: border-box;
 }
 
 /*紹介*/
@@ -175,7 +150,6 @@ main {
 }
 
 .container h3 {
-	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
@@ -203,13 +177,11 @@ main {
 
 .infomain {
 	color: white;
-	font-size: 20px;
 	margin-bottom: 10px;
 }
 
 .infotext {
 	font-weight: bold;
-	font-size: 10px;
 	padding-bottom: 10px;
 }
 
@@ -225,7 +197,6 @@ main {
 
 .shop {
 	text-align: center;
-	font-size: 25px;
 	margin-top: 20px;
 }
 
@@ -239,13 +210,11 @@ main {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 1s;
-	transform: translateY(150px);
 }
 
 .is-active {
 	opacity: 1;
 	visibility: visible;
-	transform: translateY(0);
 }
 
 /*フッター*/
