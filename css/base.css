@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+	display: block;
+}
+
+hr {
+	display: none;
+}
+
+em {
+	font-style: normal
+}
+
+input {
+	line-height: auto;
+	vertical-align: middle;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ここから*/
+
+body {
+	position: relative;
+	height: 100%;
+}
+
+/*ヘッダー*/
+
+.header {
+	background-color: lightgrey;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.navbar {
+	padding: 0%;
+}
+
+.navbar-toggler {
+	padding: 10px 15px;
+}
+
+.navbar-toggler1 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header-row {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/*スワイパー*/
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	align-self: center;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*アコーディオン*/
+
+.info {
+	font-size: 30px;
+}
+
+.services ul {
+	display: none;
+}
+
+.services h2 {
+	background: #FFC7AF;
+	gap: 0px;
+}
+
+.accordion-button::after {
+	display: none;
+}
+
+/*紹介*/
+
+.container {
+	width: 100%
+}
+
+.container h3 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.col-md-6 img {
+	width: 100%
+}
+
+.row {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+.shopinfo {
+	background-color: black;
+	color: white;
+	padding: 1% 1%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	text-align: top;
+}
+
+/*クレジット*/
+
+.infomain {
+	color: white;
+	margin-bottom: 10px;
+}
+
+.infotext {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+/*店舗一覧*/
+
+.shops img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 100%;
+	padding-left: 5px;
+}
+
+.shop {
+	text-align: center;
+	margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+	.shops {
+		display: none;
+	}
+}
+
+.scrollAnimation {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s;
+}
+
+.is-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*フッター*/
+
+.footer {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-color: darkgray;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer1 {
+	margin: 10px;
+}
